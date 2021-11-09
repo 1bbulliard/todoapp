@@ -13,6 +13,8 @@
 		DFF7522F273A0BCA00F1C77A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7521D273A0BCA00F1C77A /* ContentView.swift */; };
 		DFF75230273A0BCA00F1C77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF7521E273A0BCA00F1C77A /* Assets.xcassets */; };
 		DFF75231273A0BCA00F1C77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF7521E273A0BCA00F1C77A /* Assets.xcassets */; };
+		DFF7523B273A0BED00F1C77A /* datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7523A273A0BED00F1C77A /* datastore.swift */; };
+		DFF7523C273A0BED00F1C77A /* datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF7523A273A0BED00F1C77A /* datastore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		DFF75223273A0BCA00F1C77A /* todoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF75229273A0BCA00F1C77A /* todoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF7522B273A0BCA00F1C77A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DFF7523A273A0BED00F1C77A /* datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datastore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 				DFF7521C273A0BCA00F1C77A /* todoappApp.swift */,
 				DFF7521D273A0BCA00F1C77A /* ContentView.swift */,
 				DFF7521E273A0BCA00F1C77A /* Assets.xcassets */,
+				DFF7523A273A0BED00F1C77A /* datastore.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -178,6 +182,7 @@
 			files = (
 				DFF7522E273A0BCA00F1C77A /* ContentView.swift in Sources */,
 				DFF7522C273A0BCA00F1C77A /* todoappApp.swift in Sources */,
+				DFF7523B273A0BED00F1C77A /* datastore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 			files = (
 				DFF7522F273A0BCA00F1C77A /* ContentView.swift in Sources */,
 				DFF7522D273A0BCA00F1C77A /* todoappApp.swift in Sources */,
+				DFF7523C273A0BED00F1C77A /* datastore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
