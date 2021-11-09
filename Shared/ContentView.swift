@@ -23,6 +23,7 @@ struct ContentView: View {
             })
         }
     }
+    
     func addNewToDo()
     {
         taskStore.tasks.append(Task(id:
@@ -34,15 +35,25 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 searchBar.padding()
-                List(self.taskStore.tasks) { task in
-                    Text(task.todoitem)
-                } //.navigationBarTitle("Tasks")
+                List {
+                    ForEach(self.taskStore.tasks) {task in
+                        Text(task.todoitem)
+                    } .onMove(perform: self.move)
+                        .onDelete(perform: self.delete)
+                    }
+                } .navigationBarTitle("Tasks")
                 
-            }
-        }
+        }}
         
+    func move(from source: IndexSet, to destination : Int) {
+        
+        taskStore.tasks.move(fromOffsets: source, toOffset: destination)
+    }
+    func delete(at offsets: IndexSet) {
+        taskStore.tasks.remove(atOffsets: offsets)
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
